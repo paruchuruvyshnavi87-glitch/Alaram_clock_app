@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alarm Clock App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⏰ Alarm Clock</h1>
+
+    <!-- Current Date & Time -->
+    <h2 id="currentTime"></h2>
+    <p id="currentDate"></p>
+
+    <!-- Set Alarm -->
+    <div class="alarm-set">
+        <input type="time" id="alarmTime">
+        <button onclick="addAlarm()">Add Alarm</button>
+    </div>
+
+    <!-- Alarm List -->
+    <h3>My Alarms</h3>
+    <ul id="alarmList"></ul>
+</div>
+
+<!-- Alarm Ring Modal -->
+<div id="alarmModal" class="modal">
+    <div class="modal-content">
+        <h2>⏰ Alarm Ringing!</h2>
+        <button onclick="snoozeAlarm()">Snooze (5 min)</button>
+        <button onclick="stopAlarm()">Stop</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
